@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "Arcanoid",
+			"Path": "D:\\2017\\Descargas\\SIS457_LAB07-main\\Source\\Arcanoid.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "ArcanoidEditor",
+			"Path": "D:\\2017\\Descargas\\SIS457_LAB07-main\\Source\\ArcanoidEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
