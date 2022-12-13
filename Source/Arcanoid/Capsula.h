@@ -7,6 +7,7 @@
 #include "Capsula.generated.h"
 
 
+class UBoxComponent;
 
 UCLASS()
 class ARCANOID_API ACapsula : public AActor
@@ -32,6 +33,9 @@ protected:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
 		UStaticMeshComponent* SM_Capsula;
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
+		UBoxComponent* BoxCollision;
+
 
 public:	
 	// Called every frame
@@ -43,5 +47,7 @@ public:
 	void Desplegar();
 	void Destruir();
 	FString ObtenerNombreCapsula();
+	FVector Mov = FVector(0.0f, 0.0f, 0.0f);
+
 
 };

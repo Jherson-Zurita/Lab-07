@@ -3,8 +3,13 @@ D:\2017\Descargas\SIS457_LAB07-main\Source\Arcanoid\Brick.h
 D:\2017\Descargas\SIS457_LAB07-main\Source\Arcanoid\Capsula.h
 D:\2017\Descargas\SIS457_LAB07-main\Source\Arcanoid\CapsulaDanio.h
 D:\2017\Descargas\SIS457_LAB07-main\Source\Arcanoid\CapsulaPoder.h
+D:\2017\Descargas\SIS457_LAB07-main\Source\Arcanoid\Constructor.h
 D:\2017\Descargas\SIS457_LAB07-main\Source\Arcanoid\CreadorCapsula.h
 D:\2017\Descargas\SIS457_LAB07-main\Source\Arcanoid\CreadorCapsulaDanio.h
 D:\2017\Descargas\SIS457_LAB07-main\Source\Arcanoid\CreadorCapsulaPoder.h
+D:\2017\Descargas\SIS457_LAB07-main\Source\Arcanoid\Equipo.h
 D:\2017\Descargas\SIS457_LAB07-main\Source\Arcanoid\Paddle.h
 D:\2017\Descargas\SIS457_LAB07-main\Source\Arcanoid\PaddlePlayerController.h
+D:\2017\Descargas\SIS457_LAB07-main\Source\Arcanoid\Boss.h
+D:\2017\Descargas\SIS457_LAB07-main\Source\Arcanoid\ReinaBossBuilder.h
+D:\2017\Descargas\SIS457_LAB07-main\Source\Arcanoid\Director.h

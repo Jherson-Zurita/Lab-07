@@ -13,10 +13,18 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define ARCANOID_ArcanoidGameModeBase_generated_h
 
-#define SIS457_LAB07_main_Source_Arcanoid_ArcanoidGameModeBase_h_15_SPARSE_DATA
-#define SIS457_LAB07_main_Source_Arcanoid_ArcanoidGameModeBase_h_15_RPC_WRAPPERS
-#define SIS457_LAB07_main_Source_Arcanoid_ArcanoidGameModeBase_h_15_RPC_WRAPPERS_NO_PURE_DECLS
-#define SIS457_LAB07_main_Source_Arcanoid_ArcanoidGameModeBase_h_15_INCLASS_NO_PURE_DECLS \
+#define SIS457_LAB07_main_Source_Arcanoid_ArcanoidGameModeBase_h_16_SPARSE_DATA
+#define SIS457_LAB07_main_Source_Arcanoid_ArcanoidGameModeBase_h_16_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execDestruir);
+
+
+#define SIS457_LAB07_main_Source_Arcanoid_ArcanoidGameModeBase_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execDestruir);
+
+
+#define SIS457_LAB07_main_Source_Arcanoid_ArcanoidGameModeBase_h_16_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAArcanoidGameModeBase(); \
 	friend struct Z_Construct_UClass_AArcanoidGameModeBase_Statics; \
@@ -25,7 +33,7 @@ public: \
 	DECLARE_SERIALIZER(AArcanoidGameModeBase)
 
 
-#define SIS457_LAB07_main_Source_Arcanoid_ArcanoidGameModeBase_h_15_INCLASS \
+#define SIS457_LAB07_main_Source_Arcanoid_ArcanoidGameModeBase_h_16_INCLASS \
 private: \
 	static void StaticRegisterNativesAArcanoidGameModeBase(); \
 	friend struct Z_Construct_UClass_AArcanoidGameModeBase_Statics; \
@@ -34,7 +42,7 @@ public: \
 	DECLARE_SERIALIZER(AArcanoidGameModeBase)
 
 
-#define SIS457_LAB07_main_Source_Arcanoid_ArcanoidGameModeBase_h_15_STANDARD_CONSTRUCTORS \
+#define SIS457_LAB07_main_Source_Arcanoid_ArcanoidGameModeBase_h_16_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AArcanoidGameModeBase(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AArcanoidGameModeBase) \
@@ -47,7 +55,7 @@ private: \
 public:
 
 
-#define SIS457_LAB07_main_Source_Arcanoid_ArcanoidGameModeBase_h_15_ENHANCED_CONSTRUCTORS \
+#define SIS457_LAB07_main_Source_Arcanoid_ArcanoidGameModeBase_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AArcanoidGameModeBase(AArcanoidGameModeBase&&); \
@@ -58,28 +66,34 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AArcanoidGameModeBase)
 
 
-#define SIS457_LAB07_main_Source_Arcanoid_ArcanoidGameModeBase_h_15_PRIVATE_PROPERTY_OFFSET
-#define SIS457_LAB07_main_Source_Arcanoid_ArcanoidGameModeBase_h_12_PROLOG
-#define SIS457_LAB07_main_Source_Arcanoid_ArcanoidGameModeBase_h_15_GENERATED_BODY_LEGACY \
+#define SIS457_LAB07_main_Source_Arcanoid_ArcanoidGameModeBase_h_16_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__ReinaBuilder() { return STRUCT_OFFSET(AArcanoidGameModeBase, ReinaBuilder); } \
+	FORCEINLINE static uint32 __PPO__Engineer() { return STRUCT_OFFSET(AArcanoidGameModeBase, Engineer); } \
+	FORCEINLINE static uint32 __PPO__ReinaBuilder1() { return STRUCT_OFFSET(AArcanoidGameModeBase, ReinaBuilder1); } \
+	FORCEINLINE static uint32 __PPO__Engineer1() { return STRUCT_OFFSET(AArcanoidGameModeBase, Engineer1); }
+
+
+#define SIS457_LAB07_main_Source_Arcanoid_ArcanoidGameModeBase_h_13_PROLOG
+#define SIS457_LAB07_main_Source_Arcanoid_ArcanoidGameModeBase_h_16_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	SIS457_LAB07_main_Source_Arcanoid_ArcanoidGameModeBase_h_15_PRIVATE_PROPERTY_OFFSET \
-	SIS457_LAB07_main_Source_Arcanoid_ArcanoidGameModeBase_h_15_SPARSE_DATA \
-	SIS457_LAB07_main_Source_Arcanoid_ArcanoidGameModeBase_h_15_RPC_WRAPPERS \
-	SIS457_LAB07_main_Source_Arcanoid_ArcanoidGameModeBase_h_15_INCLASS \
-	SIS457_LAB07_main_Source_Arcanoid_ArcanoidGameModeBase_h_15_STANDARD_CONSTRUCTORS \
+	SIS457_LAB07_main_Source_Arcanoid_ArcanoidGameModeBase_h_16_PRIVATE_PROPERTY_OFFSET \
+	SIS457_LAB07_main_Source_Arcanoid_ArcanoidGameModeBase_h_16_SPARSE_DATA \
+	SIS457_LAB07_main_Source_Arcanoid_ArcanoidGameModeBase_h_16_RPC_WRAPPERS \
+	SIS457_LAB07_main_Source_Arcanoid_ArcanoidGameModeBase_h_16_INCLASS \
+	SIS457_LAB07_main_Source_Arcanoid_ArcanoidGameModeBase_h_16_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define SIS457_LAB07_main_Source_Arcanoid_ArcanoidGameModeBase_h_15_GENERATED_BODY \
+#define SIS457_LAB07_main_Source_Arcanoid_ArcanoidGameModeBase_h_16_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	SIS457_LAB07_main_Source_Arcanoid_ArcanoidGameModeBase_h_15_PRIVATE_PROPERTY_OFFSET \
-	SIS457_LAB07_main_Source_Arcanoid_ArcanoidGameModeBase_h_15_SPARSE_DATA \
-	SIS457_LAB07_main_Source_Arcanoid_ArcanoidGameModeBase_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
-	SIS457_LAB07_main_Source_Arcanoid_ArcanoidGameModeBase_h_15_INCLASS_NO_PURE_DECLS \
-	SIS457_LAB07_main_Source_Arcanoid_ArcanoidGameModeBase_h_15_ENHANCED_CONSTRUCTORS \
+	SIS457_LAB07_main_Source_Arcanoid_ArcanoidGameModeBase_h_16_PRIVATE_PROPERTY_OFFSET \
+	SIS457_LAB07_main_Source_Arcanoid_ArcanoidGameModeBase_h_16_SPARSE_DATA \
+	SIS457_LAB07_main_Source_Arcanoid_ArcanoidGameModeBase_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+	SIS457_LAB07_main_Source_Arcanoid_ArcanoidGameModeBase_h_16_INCLASS_NO_PURE_DECLS \
+	SIS457_LAB07_main_Source_Arcanoid_ArcanoidGameModeBase_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

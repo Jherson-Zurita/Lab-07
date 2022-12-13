@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeCapsulaPoder() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ACapsulaPoder, 1843368170);
+	IMPLEMENT_CLASS(ACapsulaPoder, 4098949429);
 	template<> ARCANOID_API UClass* StaticClass<ACapsulaPoder>()
 	{
 		return ACapsulaPoder::StaticClass();

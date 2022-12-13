@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeCapsulaDanio() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ACapsulaDanio, 1318277516);
+	IMPLEMENT_CLASS(ACapsulaDanio, 1284614795);
 	template<> ARCANOID_API UClass* StaticClass<ACapsulaDanio>()
 	{
 		return ACapsulaDanio::StaticClass();

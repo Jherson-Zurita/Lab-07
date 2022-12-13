@@ -32,4 +32,6 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	//FVector Mov = FVector(0.0f, 0.0f, 0.0f);
+
 };

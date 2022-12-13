@@ -37,7 +37,6 @@ ACapsula* ACreadorCapsula::GetCapsula(FString Category)
 	Capsula->Cargar();
 	Capsula->Desplegar();
 
-	
 	Capsula->Destruir();
 		
 	
@@ -45,3 +44,4 @@ ACapsula* ACreadorCapsula::GetCapsula(FString Category)
 
 	return Capsula;
 }
+

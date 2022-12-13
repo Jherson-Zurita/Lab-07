@@ -3,6 +3,7 @@
 
 #include "Capsula.h"
 #include "Components/StaticMeshComponent.h"
+#include "Kismet/GameplayStatics.h"
 #include "Components/BoxComponent.h"
 #include "UObject/ConstructorHelpers.h"
 #include "Paddle.h"
@@ -20,11 +21,17 @@ ACapsula::ACapsula()
 	SM_Capsula->SetStaticMesh(CapsulaMessAsset.Object);
 	RootComponent = SM_Capsula;
 	SM_Capsula->SetSimulatePhysics(true);
-	SM_Capsula->SetEnableGravity(true);
+	SM_Capsula->SetEnableGravity(false);
 	SM_Capsula->SetConstraintMode(EDOFMode::XZPlane);
 	SM_Capsula->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
 	SM_Capsula->SetCollisionProfileName(TEXT("PhysicsActor"));
 	TiempoDuracion = 10.0f;
+
+
+	/*BoxCollision = CreateDefaultSubobject<UBoxComponent>(TEXT("Box Collision"));
+	BoxCollision->SetBoxExtent(FVector(5.5f, 5.5f, 5.5f));
+
+	RootComponent = BoxCollision;*/
 
 	
 }
@@ -34,6 +41,9 @@ void ACapsula::BeginPlay()
 {
 	Super::BeginPlay();
 
+
+	//auto MyPawn = Cast<ACapsula>(GetActor());
+	//MyPawn->
 	
 }
 
@@ -42,6 +52,8 @@ void ACapsula::BeginPlay()
 void ACapsula::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+
+	Mov = GetActorLocation();
 
 }
 
@@ -59,11 +71,12 @@ void ACapsula::Cargar()
 void ACapsula::Desplegar()
 {
 	GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Purple, FString::Printf(TEXT("Se estan desplegando las capsulas")));
-
+	SM_Capsula->AddImpulse(FVector(0.0f, 0.0f, -100.0f), FName(), true);
 }
 
 void ACapsula::Destruir()
 {
+	
 	GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Green, FString::Printf(TEXT("Las capsulas se estan destruyendo")));
 	//this->Destroy();
 }
@@ -72,4 +85,5 @@ FString ACapsula::ObtenerNombreCapsula()
 {
 	return NombreCapsula;
 }
+
 
